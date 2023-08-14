@@ -1,38 +1,69 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.outer-container{
+  background-color: black;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 15px;;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ShowPasswordAndCopy{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ShowCharacterLength{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CopyButton{
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.slider{
+  width: 100%;
+}
+.PasswordCheckboxes{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  margin-top: 15px;
+}
+.checkboxes{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+.GeneratePassword{
+  margin-top: 15px;
+}
+.GeneratePasswordButton{
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: larger;
+}
+.PasswordStrength{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.ErrorMessage{
+  color: red;
 }
